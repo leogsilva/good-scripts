@@ -1,15 +1,16 @@
 #!/bin/bash
 
-cat > report.html << EOF
-  <!DOCTYPE html>
-  <html>
-  <head>
-      <title>Security Report</title>
+if [ "$TESTTYPE" = "SECURITY" ]
+  cat > report.html << EOF
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Security Report</title>
 
-  </head>
+    </head>
 
-  <body>
-    <h1>Security Report</h1>
-  </body>
-  </html>
-EOF
+    <body>
+      <h1>Security Report</h1>
+    </body>
+    </html>
+  EOF
