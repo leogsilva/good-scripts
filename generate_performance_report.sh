@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ "$TESTTYPE" = "PERFORMANCE" ]
-  cat > report.html << EOF
+if [ "$TESTTYPE" = "PERFORMANCE" ]; then
+  cat << EOF > report.html
     <!DOCTYPE html>
     <html>
     <head>
@@ -13,5 +13,6 @@ if [ "$TESTTYPE" = "PERFORMANCE" ]
       <h1>Performance Report</h1>
     </body>
     </html>
-  EOF
-fi  
+EOF
+
+fi
